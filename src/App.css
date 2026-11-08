@@ -1,0 +1,178 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Dashboard Background */
+.dashboard-container {
+  min-height: 100vh;
+  width: 100vw;
+  /* Replace this URL with your local 'container.jpeg' path if desired */
+  background: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=2000&auto=format&fit=crop') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  padding: 40px;
+}
+
+/* Header UI Elements */
+.header-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.dashboard-title {
+  background-color: #7990ff; /* Matches the blue badge */
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.add-book-trigger-btn {
+  background-color: #f7f7e8; /* Pale yellow/cream */
+  color: #a0a0a0;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s, color 0.2s;
+}
+
+.add-book-trigger-btn:hover {
+  transform: scale(1.05);
+  color: #666;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Form Card (The Modal itself) */
+.form-card {
+  background-color: #eef2d8; /* Distinctive light greenish-yellow from reference */
+  width: 380px;
+  border-radius: 16px;
+  padding: 20px 30px 30px 30px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+/* Form Layout */
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 12px;
+  margin-top: 5px;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  margin: 5px 0;
+}
+
+/* Inputs */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #c0c4a8;
+  border-radius: 6px;
+  background-color: transparent;
+  font-size: 0.9rem;
+  outline: none;
+  color: #333;
+}
+
+.form-input::placeholder {
+  color: #999;
+}
+
+.form-input:focus {
+  border-color: #7990ff;
+}
+
+/* Specific styling for the date labels */
+.date-label {
+  font-size: 0.85rem;
+  color: #666;
+  margin-left: 2px;
+}
+
+.date-input {
+  color: #666;
+}
+
+/* Formik Error Text */
+.error-text {
+  color: #d93025;
+  font-size: 0.75rem;
+  margin-left: 4px;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #637be6; /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #5267c7;
+}
