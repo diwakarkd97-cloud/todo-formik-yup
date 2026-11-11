@@ -1,16 +1,30 @@
-# React + Vite
+Book Management Admin Dashboard
+A simple and interactive React application for managing book records. This project features a clean UI with a modal form for adding and editing books, complete with robust form validation, and a dynamic dashboard to display, expand, edit, and delete book entries.
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+🚀 Features
+Interactive Dashboard: View all added books in a stylish card-based layout.
 
-Currently, two official plugins are available:
+Add & Edit Books: A reusable modal component (SimpleForm) handles both creating new books and updating existing ones.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Form Validation (Formik & Yup):
 
-## React Compiler
+Requires all fields to be filled out.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ISBN Validation: Strictly accepts only numeric values.
 
-## Expanding the Oxlint configuration
+Biography Validation: Requires a minimum of 10 characters and restricts the maximum length to 150 words.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Expandable Cards: "Show More" / "Show Less" toggle on each book card to reveal or hide the author's details and biography.
+
+Delete Functionality: Instantly remove a book from the dashboard.
+
+Responsive CSS Design: Custom-styled components with a clean, modern aesthetic.
+
+🛠️ Tech Stack
+React (Functional Components, Hooks)
+
+Formik (Form State Management)
+
+Yup (Schema-based Form Validation)
+
+CSS3 (Custom styling and layout)
