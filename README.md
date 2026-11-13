@@ -1,7 +1,7 @@
 Book Management Admin Dashboard
 A simple and interactive React application for managing book records. This project features a clean UI with a modal form for adding and editing books, complete with robust form validation, and a dynamic dashboard to display, expand, edit, and delete book entries.
 
-🚀 Features
+ Features
 Interactive Dashboard: View all added books in a stylish card-based layout.
 
 Add & Edit Books: A reusable modal component (SimpleForm) handles both creating new books and updating existing ones.
@@ -19,8 +19,7 @@ Expandable Cards: "Show More" / "Show Less" toggle on each book card to reveal o
 Delete Functionality: Instantly remove a book from the dashboard.
 
 Responsive CSS Design: Custom-styled components with a clean, modern aesthetic.
-
-🛠️ Tech Stack
+ Tech Stack
 React (Functional Components, Hooks)
 
 Formik (Form State Management)
